@@ -1,6 +1,5 @@
 import sys
 import pandas as pd
-from pathlib import Path
 from openpyxl import load_workbook
 from datetime import datetime
 from PyQt6 import QtCore
