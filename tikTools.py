@@ -41,7 +41,7 @@ class TableModel(QtCore.QAbstractTableModel):
 class TikTools(Ui_MainWindow, QMainWindow):
     def __init__(self):
         super().__init__()   # 调用父类的构造方法
-        icon = QIcon("icon.png")
+        icon = QIcon(r"D:\Desktop\HubCode\pycharm\tikTools\icon.png")   # pyinstaller在打包成exe时, 需使用绝对路径才能生效
         self.setWindowIcon(icon)
         self.setupUi(self)   # 初始化构造界面
         self.btn_select_file.clicked.connect(self.open_excel_file)    # 事件绑定
