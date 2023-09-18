@@ -155,7 +155,7 @@ class Ui_MainWindow(object):
         font.setBold(False)
         self.txt_ddl_content.setFont(font)
         self.txt_ddl_content.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
-        self.txt_ddl_content.setMarkdown("")
+        self.txt_ddl_content.setPlaceholderText("")
         self.txt_ddl_content.setObjectName("txt_ddl_content")
         self.gridLayout.addWidget(self.txt_ddl_content, 4, 7, 1, 3)
         self.horizontalLayout.addLayout(self.gridLayout)
@@ -260,6 +260,13 @@ class Ui_MainWindow(object):
         self.txt_file_name.setText(_translate("MainWindow", "D:\\Desktop\\数据字典模板"))
         self.radioBtn_all.setText(_translate("MainWindow", "全选"))
         self.radioBtn_part.setText(_translate("MainWindow", "部分"))
+        self.txt_ddl_content.setMarkdown(_translate("MainWindow", "**ddl脚本**生成步骤：                                           \n"
+"\n"
+"1、点击 <选择文件> 按钮，打开excel模板文件  \n"
+"\n"
+"2、点击 <生成ddl脚本> 按钮，生成ddl脚本\n"
+"\n"
+""))
         self.txt_ddl_content.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -267,10 +274,11 @@ class Ui_MainWindow(object):
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:\'Microsoft YaHei UI\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
-        self.txt_ddl_content.setPlaceholderText(_translate("MainWindow", "ddl脚本生成步骤：                                           1、点击 <选择文件> 按钮，打开excel模板文件  2、点击 <生成ddl脚本> 按钮，生成ddl脚本"))
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:700; color:#ff0000;\">ddl脚本</span>生成步骤：                                           </p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">1、点击 &lt;<span style=\" color:#aa00ff;\">选择文件</span>&gt; 按钮，打开excel模板文件  </p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">2、点击 &lt;<span style=\" color:#aa00ff;\">生成ddl脚本</span>&gt; 按钮，生成ddl脚本</p></body></html>"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "1.生成ddl脚本"))
-        self.label_4.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:700; color:#ff0000;\">执行步骤：</span><br/>1、在Excel表格里批量生成数据（第一行是表头，其余行是数据）<br/>2、ctrl+ c ==》剪切板<br/>3、点击生成按钮</p></body></html>"))
+        self.label_4.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:700; color:#ff0000;\">执行步骤：</span><br/>1、在Excel表格里批量生成数据（第一行是表头，其余行是数据）<br/>2、Ctrl + C ==》剪切板<br/>3、点击生成按钮</p></body></html>"))
         self.btn_gen_select.setText(_translate("MainWindow", "生成select-union脚本"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "2.生成select-union脚本"))
         self.menu.setTitle(_translate("MainWindow", "帮助"))
