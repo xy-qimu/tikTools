@@ -5,7 +5,7 @@ from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QFont, QIcon
 from PyQt6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
 from tikToolsUI import Ui_MainWindow
-from tools import genDDL_mysql, genSelect
+from tools import genDDL_mysql, genDDL_psql, genSelect
 
 
 class TableModel(QtCore.QAbstractTableModel):
