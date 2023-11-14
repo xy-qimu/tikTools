@@ -5,7 +5,7 @@ from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QFont, QIcon
 from PyQt6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
 from tikToolsUI import Ui_MainWindow
-from tools import genDDL,genSelect
+from tools import genDDL_mysql, genSelect
 
 
 class TableModel(QtCore.QAbstractTableModel):
@@ -45,9 +45,12 @@ class TikTools(Ui_MainWindow, QMainWindow):
         self.setupUi(self)   # 初始化构造界面
         self.btn_select_file.clicked.connect(self.open_excel_file)    # 事件绑定
         self.btn_gen_ddl.clicked.connect(self.gen_ddl_content)        # 事件绑定
+        self.radioBtn_msql.clicked.connect(self.set_db_type_msql)
+        self.radioBtn_psql.clicked.connect(self.set_db_type_psql)
         self.menu_about.triggered.connect(self.about_info)
 
         self.btn_gen_select.clicked.connect(self.gen_select_content)
+        self.db_type = 'psql'
 
     def open_excel_file(self):
         home_dir =  self.txt_file_name.text()
@@ -70,7 +73,11 @@ class TikTools(Ui_MainWindow, QMainWindow):
 
     def gen_ddl_content(self):
         fname = self.fname[0]
-        sql_content = genDDL.gen_ddl(fname)
+        if self.db_type == 'psql':
+            sql_content = genDDL_psql.gen_ddl(fname)
+        else:
+            sql_content = genDDL_mysql.gen_ddl(fname)
+
         self.txt_ddl_content.setText(sql_content)
         QMessageBox.information(self, "成功提示！", sql_content[:25])
 
@@ -81,6 +88,11 @@ class TikTools(Ui_MainWindow, QMainWindow):
         sql = genSelect.gen_select()
         self.txt_gen_select.setText(sql)
 
+    def set_db_type_psql(self):
+        self.db_type = 'psql'
+
+    def set_db_type_msql(self):
+        self.db_type = 'msql'
 
 # 主程序入口
 if __name__ == '__main__':
