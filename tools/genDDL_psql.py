@@ -39,6 +39,5 @@ def gen_ddl(fname):
                 comment_table = f"""{comment_table}  {comment_content} """
             sql_content = sql_content + sql_comment + drop_table + create_table.rstrip() + f"""\n) ;\n\n""" + comment_table
 
-    sql_content = f"""-- 总共生成 ddl 脚本数是：{i} \n--   生成 ddl 脚本的时间：{str(datetime.today())[:19]}\n\n""" + sql_content
-
-    return sql_content
+    mes_info = f"""-- 共生成 ：{i} 张表\n-- 生成时间：{str(datetime.today())[:19]}\n\n"""
+    return mes_info, sql_content

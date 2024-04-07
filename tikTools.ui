@@ -63,126 +63,6 @@
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
          <layout class="QGridLayout" name="gridLayout">
-          <item row="4" column="7" colspan="3">
-           <widget class="QTextEdit" name="txt_ddl_content">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-              <bold>false</bold>
-             </font>
-            </property>
-            <property name="layoutDirection">
-             <enum>Qt::LeftToRight</enum>
-            </property>
-            <property name="markdown">
-             <string>**ddl脚本**生成步骤：  
-
-                                         
-
-1、点击 &lt;选择文件&gt; 按钮，打开excel模板文件  
-
-2、点击 &lt;生成ddl脚本&gt; 按钮，生成ddl脚本
-
-</string>
-            </property>
-            <property name="html">
-             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-hr { height: 1px; border-width: 0; }
-li.unchecked::marker { content: &quot;\2610&quot;; }
-li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700; color:#ff0000;&quot;&gt;ddl脚本&lt;/span&gt;生成步骤：  &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;                                         &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1、点击 &amp;lt;&lt;span style=&quot; color:#aa00ff;&quot;&gt;选择文件&lt;/span&gt;&amp;gt; 按钮，打开excel模板文件  &lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2、点击 &amp;lt;&lt;span style=&quot; color:#aa00ff;&quot;&gt;生成ddl脚本&lt;/span&gt;&amp;gt; 按钮，生成ddl脚本&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-            </property>
-            <property name="placeholderText">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="3">
-           <widget class="Line" name="line_2">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="6">
-           <widget class="Line" name="line_4">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="6">
-           <widget class="Line" name="line_3">
-            <property name="lineWidth">
-             <number>0</number>
-            </property>
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="Line" name="line">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="8" alignment="Qt::AlignHCenter">
-           <widget class="QRadioButton" name="radioBtn_psql">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="text">
-             <string>PostgreSQL</string>
-            </property>
-            <property name="checked">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="1" colspan="5">
-           <widget class="QLineEdit" name="txt_file_name">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>8</pointsize>
-              <italic>true</italic>
-              <bold>false</bold>
-             </font>
-            </property>
-            <property name="toolTip">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;excel数据字典文件 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-            </property>
-            <property name="text">
-             <string>D:\Desktop\数据字典模板</string>
-            </property>
-            <property name="placeholderText">
-             <string/>
-            </property>
-           </widget>
-          </item>
           <item row="1" column="0">
            <widget class="QPushButton" name="btn_select_file">
             <property name="sizePolicy">
@@ -196,14 +76,26 @@ li.checked::marker { content: &quot;\2612&quot;; }
             </property>
            </widget>
           </item>
-          <item row="0" column="6">
-           <widget class="Line" name="line_5">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
+          <item row="1" column="7">
+           <widget class="QPushButton" name="btn_gen_ddl">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Gen</string>
             </property>
            </widget>
           </item>
-          <item row="3" column="0" rowspan="2" colspan="7">
+          <item row="3" column="0" rowspan="2" colspan="5">
            <widget class="QTableView" name="table_file_content">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -234,26 +126,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
             </attribute>
            </widget>
           </item>
-          <item row="1" column="7">
-           <widget class="QPushButton" name="btn_gen_ddl">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>12</pointsize>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="text">
-             <string>生成ddl脚本</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="9">
+          <item row="1" column="10" alignment="Qt::AlignHCenter">
            <widget class="QRadioButton" name="radioBtn_msql">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -263,6 +136,136 @@ li.checked::marker { content: &quot;\2612&quot;; }
             </property>
             <property name="text">
              <string>Mysql</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="9" alignment="Qt::AlignHCenter">
+           <widget class="QRadioButton" name="radioBtn_psql">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>PGSQL</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="6">
+           <widget class="Line" name="line_3">
+            <property name="lineWidth">
+             <number>0</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="6">
+           <widget class="Line" name="line_5">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="Line" name="line_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="Line" name="line">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="7" colspan="4">
+           <widget class="QTextEdit" name="txt_ddl_content">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="markdown">
+             <string>**生成步骤： ** 
+
+                                         
+
+1、点击 &lt;选择文件&gt; 按钮，打开excel模板文件  
+
+2、点击 &lt;**Gen**&gt; 按钮，生成脚本
+
+</string>
+            </property>
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700; color:#ff0000;&quot;&gt;生成步骤： &lt;/span&gt; &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;                                         &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1、点击 &amp;lt;&lt;span style=&quot; color:#aa00ff;&quot;&gt;选择文件&lt;/span&gt;&amp;gt; 按钮，打开excel模板文件  &lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2、点击 &amp;lt;&lt;span style=&quot; font-weight:700; color:#ff0000;&quot;&gt;Gen&lt;/span&gt;&amp;gt; 按钮，生成脚本&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="placeholderText">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1" colspan="4">
+           <widget class="QLineEdit" name="txt_file_name">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+              <italic>true</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;excel数据字典文件 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="text">
+             <string>D:\Desktop\数据字典模板</string>
+            </property>
+            <property name="placeholderText">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="8" alignment="Qt::AlignHCenter">
+           <widget class="QRadioButton" name="radioBtn_dbt">
+            <property name="text">
+             <string>Dbt</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
@@ -313,7 +316,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
              </font>
             </property>
             <property name="text">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700; color:#ff0000;&quot;&gt;执行步骤：&lt;/span&gt;&lt;br/&gt;1、在Excel表格里批量生成数据（第一行是表头，其余行是数据）&lt;br/&gt;2、Ctrl + C ==》剪切板&lt;br/&gt;3、点击生成按钮&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700; color:#ff0000;&quot;&gt;执行步骤：&lt;/span&gt;&lt;br/&gt;1、在Excel表格里批量生成数据（&lt;span style=&quot; font-style:italic;&quot;&gt;第一行是&lt;/span&gt;&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;表头&lt;/span&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;，其余行是&lt;/span&gt;&lt;span style=&quot; font-style:italic; color:#ff0000;&quot;&gt;数据&lt;/span&gt;）&lt;br/&gt;2、Ctrl + C ==》剪切板&lt;br/&gt;3、点击&amp;lt;&lt;span style=&quot; font-weight:700; color:#ff0000;&quot;&gt;Gen&lt;/span&gt;&amp;gt;按钮&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
           </item>
@@ -363,7 +366,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
              </font>
             </property>
             <property name="text">
-             <string>生成select-union脚本</string>
+             <string>Gen</string>
             </property>
            </widget>
           </item>
@@ -407,7 +410,6 @@ li.checked::marker { content: &quot;\2612&quot;; }
   <tabstop>tabWidget</tabstop>
   <tabstop>btn_select_file</tabstop>
   <tabstop>txt_file_name</tabstop>
-  <tabstop>btn_gen_ddl</tabstop>
   <tabstop>radioBtn_msql</tabstop>
   <tabstop>radioBtn_psql</tabstop>
   <tabstop>table_file_content</tabstop>

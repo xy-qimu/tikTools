@@ -5,7 +5,7 @@ from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QFont, QIcon
 from PyQt6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
 from tikToolsUI import Ui_MainWindow
-from tools import genDDL_mysql, genDDL_psql, genSelect
+from tools import genDDL_mysql, genDDL_psql, genSelect, genDBT_yml
 
 
 class TableModel(QtCore.QAbstractTableModel):
@@ -47,10 +47,11 @@ class TikTools(Ui_MainWindow, QMainWindow):
         self.btn_gen_ddl.clicked.connect(self.gen_ddl_content)        # 事件绑定
         self.radioBtn_msql.clicked.connect(self.set_db_type_msql)
         self.radioBtn_psql.clicked.connect(self.set_db_type_psql)
+        self.radioBtn_dbt.clicked.connect(self.set_db_type_dbt)
         self.menu_about.triggered.connect(self.about_info)
 
         self.btn_gen_select.clicked.connect(self.gen_select_content)
-        self.db_type = 'psql'
+        self.db_type = 'dbt'
 
     def open_excel_file(self):
         home_dir =  self.txt_file_name.text()
@@ -74,12 +75,16 @@ class TikTools(Ui_MainWindow, QMainWindow):
     def gen_ddl_content(self):
         fname = self.fname[0]
         if self.db_type == 'psql':
-            sql_content = genDDL_psql.gen_ddl(fname)
+            mes_info, sql_content = genDDL_psql.gen_ddl(fname)
+            sql_content = mes_info + sql_content
+        elif self.db_type == 'msql':
+            mes_info, sql_content = genDDL_mysql.gen_ddl(fname)
+            sql_content = mes_info + sql_content
         else:
-            sql_content = genDDL_mysql.gen_ddl(fname)
+            mes_info, sql_content = genDBT_yml.gen_ddl(fname)
 
         self.txt_ddl_content.setText(sql_content)
-        QMessageBox.information(self, "成功提示！", sql_content[:25])
+        QMessageBox.information(self, "成功提示！", mes_info[:13])
 
     def about_info(self):
         QMessageBox.information(self, "关于", f"""Author：tik.xie\nVersion：v1.1""")
@@ -93,6 +98,9 @@ class TikTools(Ui_MainWindow, QMainWindow):
 
     def set_db_type_msql(self):
         self.db_type = 'msql'
+
+    def set_db_type_dbt(self):
+        self.db_type = 'dbt'
 
 # 主程序入口
 if __name__ == '__main__':
