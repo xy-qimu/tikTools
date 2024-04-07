@@ -255,12 +255,12 @@ class Ui_MainWindow(object):
         self.btn_select_file.setText(_translate("MainWindow", "选择文件"))
         self.btn_gen_ddl.setText(_translate("MainWindow", "Gen"))
         self.radioBtn_msql.setText(_translate("MainWindow", "Mysql"))
-        self.radioBtn_psql.setText(_translate("MainWindow", "PGSQL"))
+        self.radioBtn_psql.setText(_translate("MainWindow", "PGsql"))
         self.txt_ddl_content.setMarkdown(_translate("MainWindow", "**生成步骤： ** \n"
 "\n"
 "                                         \n"
 "\n"
-"1、点击 <选择文件> 按钮，打开excel模板文件  \n"
+"1、点击 <选择文件> 按钮，打开文件  \n"
 "\n"
 "2、点击 <**Gen**> 按钮，生成脚本\n"
 "\n"
@@ -274,11 +274,11 @@ class Ui_MainWindow(object):
 "</style></head><body style=\" font-family:\'Microsoft YaHei UI\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:700; color:#ff0000;\">生成步骤： </span> </p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                                         </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">1、点击 &lt;<span style=\" color:#aa00ff;\">选择文件</span>&gt; 按钮，打开excel模板文件  </p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">1、点击 &lt;<span style=\" color:#aa00ff;\">选择文件</span>&gt; 按钮，打开文件  </p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">2、点击 &lt;<span style=\" font-weight:700; color:#ff0000;\">Gen</span>&gt; 按钮，生成脚本</p></body></html>"))
         self.txt_file_name.setToolTip(_translate("MainWindow", "<html><head/><body><p>excel数据字典文件 </p></body></html>"))
-        self.txt_file_name.setText(_translate("MainWindow", "D:\\Desktop\\数据字典模板"))
+        self.txt_file_name.setText(_translate("MainWindow", "D:\\Desktop\\数据字典"))
         self.radioBtn_dbt.setText(_translate("MainWindow", "Dbt"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "1.生成ddl脚本"))
         self.label_4.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:700; color:#ff0000;\">执行步骤：</span><br/>1、在Excel表格里批量生成数据（<span style=\" font-style:italic;\">第一行是</span><span style=\" font-style:italic; color:#ff0000;\">表头</span><span style=\" font-style:italic;\">，其余行是</span><span style=\" font-style:italic; color:#ff0000;\">数据</span>）<br/>2、Ctrl + C ==》剪切板<br/>3、点击&lt;<span style=\" font-weight:700; color:#ff0000;\">Gen</span>&gt;按钮</p></body></html>"))
